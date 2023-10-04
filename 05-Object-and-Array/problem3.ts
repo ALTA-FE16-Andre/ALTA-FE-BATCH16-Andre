@@ -1,5 +1,8 @@
 function removeDuplicates(array: number[]): number {
   // your code here
+  const numberLeftover = [...new Set(array)] 
+
+    return numberLeftover.length
 }
 
 console.log(removeDuplicates([2, 3, 3, 3, 6, 9, 9])); // 4
