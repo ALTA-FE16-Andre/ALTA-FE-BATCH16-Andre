@@ -1,5 +1,11 @@
 function exponentiation(x: number, n: number): number | string {
   // your code here
+  if (x >= 0 && n >= 0) {
+    const result = x ** n;
+    return result;
+  } else {
+    return "wrong input";
+  }
 }
 
 console.log(exponentiation(2, 3)); // 8
