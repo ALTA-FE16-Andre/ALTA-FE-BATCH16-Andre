@@ -8,7 +8,7 @@ function primeX(number: number): number {
       if (currentNumber % i === 0) {
         isPrime = false;
         break;
-      }
+      } 
     }
     if (isPrime) {
       primes.push(currentNumber);

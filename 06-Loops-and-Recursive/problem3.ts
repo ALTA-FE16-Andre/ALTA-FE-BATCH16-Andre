@@ -1,48 +1,42 @@
 function primaSegiEmpat(wide: number, high: number, start: number): void {
-  // your code here
-  let count: number = 0;
-  let currentNumber: number = start + 1;
-  let jumlah: number = 0;
-  const grid: number[][] = [];
+    let result = ''
+    let primaNumber = start
+    let jumlah = 0
 
-  while (count < wide * high) {
-    let isPrime = true;
-
-    //loop mulai dari bilangan prima terkecil
-    for (let i = 2; i <= Math.sqrt(currentNumber); i++) {
-      if (currentNumber % i === 0) {
-        isPrime = false;
-        break;
+    const prima = (i : number) => {
+      if (i <= 1) return false
+      if (i <= 3) return true
+      if (i % 2 === 0 || i % 3 === 0) return false
+      let j = 5
+      while (j * j <= i) {
+        if(i % j === 0 || i % (j + 2) === 0) return false
+        j += 6
       }
+      return true
     }
 
-    if (isPrime) {
-      if (count % wide === 0) {
-        grid.push([currentNumber]);
-      } else {
-        grid[grid.length - 1].push(currentNumber);
+    for (let j = 0; j < high; j++) {
+      let row = ''
+      for (let k = 0; k < wide; k++) {
+        do {
+          primaNumber++
+        } while (!prima(primaNumber))
+        row += primaNumber + ' '
+        jumlah += primaNumber
       }
-      count++;
-      jumlah += currentNumber;
+      result += row.trim() + '\n'
     }
-
-    currentNumber++;
-  }
-  
-  for(let i = 0; i < grid.length; i++) {
-    console.log(grid[i]);
-  }
-  console.log(jumlah)
+    console.log(result += jumlah)
 }
 
-console.log(primaSegiEmpat(2, 3, 13));
+primaSegiEmpat(2, 3, 13);
 /*
 17 19
 23 29
 31 37
 156
 */
-console.log(primaSegiEmpat(5, 2, 1));
+primaSegiEmpat(5, 2, 1);
 /*
 2  3  5  7 11
 13 17 19 23 29
