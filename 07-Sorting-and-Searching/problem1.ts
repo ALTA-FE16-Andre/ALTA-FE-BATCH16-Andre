@@ -1,5 +1,20 @@
 function maximumBuyProduct(money: number, productPrice: number[]): number {
   // your code here
+    productPrice.sort((a, b) => a - b);
+    let jumlahProduct: number = 0;
+    let hargaTotal: number = 0;
+
+    for (let i = 0; i < productPrice.length; i++) {
+        const price = productPrice[i];
+        if (hargaTotal + price <= money) {
+            hargaTotal += price;
+            jumlahProduct++;
+        } else {
+            break;
+        }
+    }
+
+    return jumlahProduct;
 }
 
 console.log(maximumBuyProduct(50000, [25000, 25000, 10000, 14000])); // 3

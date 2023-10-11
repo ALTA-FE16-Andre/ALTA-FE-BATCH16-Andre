@@ -1,7 +1,20 @@
-function playingDomino(cards: number[][], deck: number[]): number[] {
-  // your code here
-}
-
+ function playingDomino(cards: number[][], deck: number[]): number[] {
+    let selectedDomino: number[] | [] = [];
+    let jumlahMax = 0;
+  
+    cards.forEach((card) => {
+      const [num1, num2] = card;
+      if (num1 === deck[0] || num1 === deck[1] || num2 === deck[0] || num2 === deck[1]) {
+        const sum = num1 + num2;
+         if (sum > jumlahMax) {
+          selectedDomino = card;
+          jumlahMax = sum;
+        }
+      }
+    });
+    return selectedDomino;
+  }
+  
 console.log(
   playingDomino(
     [
