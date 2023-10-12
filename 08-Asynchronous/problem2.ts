@@ -30,4 +30,25 @@ interface ObjItem {
 
 function buyApparel(money: number, objItem: ObjItem, callback: () => void) {
   // your code here
+  console.log(`saya membawa uang sebesar Rp. ${money}`);
+  console.log(`saya ingin membeli ${objItem.item}`);
+  console.log(`dengan harga Rp. ${objItem.price}`);
+  console.log(`dan waktu yang dibutuhkan adalah ${objItem.time / 1000} detik \n`);
+
+  setTimeout(() => {
+    money -= objItem.price;
+    if (callback) {
+      callback();
+    }
+  }, objItem.time);
 }
+
+buyApparel(150000, clothes, () => {
+  buyApparel(150000 - clothes.price, pants, () => {
+    buyApparel(150000 - clothes.price - pants.price, hat, () => {
+      buyApparel(150000 - clothes.price - pants.price - hat.price, shoes, () => {
+        console.log(`sisa kembaliannya adalah Rp. ${150000 - clothes.price - pants.price - hat.price - shoes.price}`);
+      });
+    });
+  });
+});
