@@ -1,5 +1,18 @@
 function fiboTopDown(n: number): number {
   // your code here
+  let count = 0
+  let mem : number[] = []
+
+  count++
+
+  if (mem[n]) return mem[n]
+
+  if (n <= 1) {
+    mem[n] = n
+  } else {
+    mem[n] = fiboTopDown(n - 1) + fiboTopDown(n - 2)
+  }
+  return mem[n]
 }
 
 console.log(fiboTopDown(0)); // 0
