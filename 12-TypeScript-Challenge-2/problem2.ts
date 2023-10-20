@@ -1,5 +1,13 @@
 function cetakTablePerkalian(number: number): void {
   // Your Solution Code Here
+  for (let baris = 1; baris <= number; baris++) {
+    let hasilPerkalian = "";
+    for (let kolom = 1; kolom <= number; kolom++) {
+      const hasil = baris * kolom;
+      hasilPerkalian += `${hasil} `;
+    }
+    console.log(hasilPerkalian);
+  }
 }
 
 cetakTablePerkalian(9);
