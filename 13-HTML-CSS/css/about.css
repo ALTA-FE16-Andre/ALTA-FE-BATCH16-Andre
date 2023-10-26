@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:wght@300;400;500;600;700;800;900&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto";
+  background-color: white;
+  color: #19345e;
+}
+
+header {
+  background-color: white;
+  text-align: right;
+  padding: 20px;
+  z-index: 10;
+  width: 100%;
+}
+
+nav {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 0 125px 0 125px;
+}
+
+nav .logo {
+  justify-self: flex-start;
+}
+
+nav a {
+  justify-content: flex-start;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav li:last-child {
+  margin-right: 0;
+}
+
+nav a {
+  color: #19345e;
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: #f47522;
+}
+
+.about {
+  color: #19345e;
+  font-size: 50px;
+  margin-left: 80px;
+}
+
+.education {
+  margin-left: 80px;
+}
+
+.wrapper {
+  width: 1500px;
+  margin: auto;
+  position: relative;
+}
+
+.up {
+  color: #19345e;
+  font-family: "Roboto";
+  font-size: 40px;
+  background-color: whitesmoke;
+  padding-block: 30px;
+}
+
+.list {
+  margin-left: -40px;
+}
+
+.isi {
+  height: 300px;
+  margin-left: 80px;
+  margin-top: 150px;
+  border-radius: 50%;
+}
+
+.image {
+  margin-left: 80px;
+  margin-top: 15px;
+  margin-left: 900px;
+  border-radius: 8px;
+  height: 250px;
+}
+
+.titik {
+  width: 80px;
+  height: 70px;
+  margin-left: 863px;
+  margin-top: -50px;
+  display: flex;
+}
+
+.text {
+  color: #19345e;
+  font-family: "Roboto";
+  font-size: 16px;
+  margin-left: 80px;
+  position: absolute;
+  margin-top: 25px;
+}
+
+.pdk {
+  margin-left: 80px;
+  font-size: larger;
+  margin-top: -160px;
+}
+
+.judul {
+  margin-left: 0px;
+  font-family: "Muli, semiBold";
+  font-size: 18px;
+  color: #19345e;
+  margin-top: 50px;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th,
+td {
+  width: 200px;
+  height: 50px;
+  text-align: center;
+}
+
+.footer {
+  background-color: #19345e;
+  margin-top: 30px;
+  padding: 3px;
+  height: 280px;
+}
+
+.copy {
+  color: white;
+  font-size: medium;
+  text-align: center;
+  margin-left: 20px;
+}
+
+.social {
+  color: white;
+  font-size: medium;
+  text-align: center;
+  margin-left: 5px;
+  height: 5px;
+}
+
+.facebook {
+  margin-left: 320px;
+  height: 30px;
+}
+
+.twitter {
+  margin-left: 30px;
+  height: 30px;
+}
+
+.instagram {
+  margin-left: 30px;
+  height: 30px;
+}
+
+.linkedin {
+  margin-left: 30px;
+  height: 30px;
+}
+
+.button {
+  font-size: 15px;
+  background: orangered;
+  color: white;
+  border-radius: 130px;
+  padding: 12px 20px;
+  margin-top: 0px;
+  margin-left: 80px;
+}
+
+p {
+  font-weight: 800;
+  font-size: 50px;
+  margin-bottom: 20px;
+  color: #364f6b;
+  width: 100%;
+  line-height: 50px;
+  margin-left: 80px;
+}
+
+.deskripsi {
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 100px;
+  color: #364f6b;
+  margin-bottom: 100px;
+  padding-top: 150px;
+}
