@@ -3,105 +3,154 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Alterra Academy</title>
+    <title>About Me</title>
     <link rel="stylesheet" href="/13-HTML-CSS/css/about.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .text {
+        white-space: nowrap;
+      }
+      .mathew {
+        border-radius: 18px;
+      }
+
+      table {
+        border-collapse: collapse;
+        border: 1px solid gray;
+      }
+
+      th,
+      td {
+        border: 1px solid gray;
+        padding-top: 6px;
+        padding-bottom: 6px;
+        padding-left: 8px;
+        padding-right: 4rem;
+        white-space: nowrap;
+      }
+
+      body {
+        margin: 0;
+        overflow: auto;
+      }
+      .tabela {
+        table-layout: auto;
+        width: 100%;
+      }
+    </style>
   </head>
-
   <body>
-    <header>
-      <nav>
+    <nav class="navbar">
+      <div>
         <a class="logo" href="home.html">
-          <img src="/13-HTML-CSS/assets/logo-ALTA.png" width="120" height="60"
-        /></a>
-        <ul>
-          <li><a href="home.html">HOME</a></li>
-          <li><a href="about.html">ABOUT</a></li>
-          <li><a href="experience.html">EXPERIENCE</a></li>
-          <li><a href="contact.html">CONTACT</a></li>
-        </ul>
-      </nav>
-    </header>
-
-<div class="up">
-    <h1 class="about">ABOUT ME.</h1>
-</div>
-
-<article class="text">
-Versatile Front-End web developer with 3+ years of experience </br>
-designing, developing, and managing complex e-commerce </br>
-sites and internal frameworks. Specializes in AngularJs </br> 
-and responsive design
-</article>
-
-<div class="wrapper">
-    <img
-    class="image"
-    src="/13-HTML-CSS/assets/matthew-hamilton-tNCH0sKSZbA-unsplash.jpg"
-    alt="gambar"/>
-    <img class="titik" src="/13-HTML-CSS/assets/img-dot@2x.png" alt="titik" />
-</div>
-
-<div class="pdk">
-    <h3>Education</h3>
-    <ul class="list">
-<li>
-    2014<br/>
-    DIPLOMA<br/>
-    Computer Engineer
-</li>
-<br/>
-
-<li>
-    2018<br/>
-    DIPLOMA<br/>
-    Computer Engineer
-</li>
-</ul>
-
-<div class="tabel">
-<p class="judul">
-    Here's few technologies I've been working with recently :
-</p>
-
-<table>
-    <tr>
-        <td>HTML & CSS</td>
-        <td>PROGRAMMING</td>
-        <td>Database</td>
-    </tr>
-
-    <tr>
-        <td>Serverless</td>
-        <td>Restfull-API</td>
-        <td>Javascript</td>
-    </tr>
-
-    <tr>
-        <td>Scrum</td>
-        <td>Test-Driven DEV</td>
-        <td>Software Testing</td>
-    </tr>
-
-    <tr>
-        <td>Github</td>
-        <td>Single Page App</td>
-        <td>UI/UX Designer</td>
-    </tr>
-</table>
-
-</div>
-</div>
-
-<footer class="footer">
-    <p class="social">Social Media</p>
-    <img src="/13-HTML-CSS/assets/logo-ALTA-v2.png">
-    <img class="facebook" src="/13-HTML-CSS/assets/ic_fb.png" alt="">
-    <img class="twitter" src="/13-HTML-CSS/assets/ic-twitter.png" alt="">
-    <img class="instagram" src="/13-HTML-CSS/assets/ic-instagram.png" alt="">
-    <img class="linkedin" src="/13-HTML-CSS/assets/ic-linkedin.png" alt="">
-    <p class="copy">Copyright</p>
-    </footer>
-    
-
-</body>
+          <img src="/13-HTML-CSS/assets/logo-ALTA.png" />
+        </a>
+      </div>
+      <div class="navbar-subcon2">
+        <a href="home.html">HOME</a>
+        <a style="color: #f47522" href="about.html">ABOUT</a>
+        <a href="experience.html">EXPERIENCE</a>
+        <a href="contact.html">CONTACT</a>
+      </div>
+    </nav>
+    <div class="container-headline">
+      <p>ABOUT ME.</p>
+    </div>
+    <div class="container-content">
+      <div>
+        <div>
+          <p class="content-desc">
+            Versatile Front-end Developer with 3+ years of experience </br>
+            designing, developing, and managing complex e-commerce </br>
+            sites and internal frameworks. Specializes in AngularJS </br>
+            and responsive design.
+          </p>
+        </div>
+        <div class="content-ul">
+          <p class="judula">Education</p>
+          <ul class="list-main">
+            <li class="list-con">
+              <p class="bold-textlist">2014</p>
+              <p class="bold-textlist">DIPLOMA</p>
+              <p class="jurusan">
+                Computer Engineering - University of Chicago
+              </p>
+            </li>
+            <li class="list-con">
+              <p class="tahun">2018</p>
+              <p class="bold-textlist">BACHELOR DEGREE</p>
+              <p>BS Computer Engineering - University of Chicago</p>
+            </li>
+          </ul>
+        </div>
+        <div class="last-content">
+          <p class="judulb">
+            Here's few technologies I've been working with recently :
+          </p>
+          <div class="content-2">
+            <table class="tabela">
+              <tr>
+                <td>HTML & CSS</td>
+                <td>Serverless</td>
+                <td>Scrum</td>
+              </tr>
+              <tr>
+                <td>Programming</td>
+                <td>Restful API</td>
+                <td>Test-Driven Dev</td>
+              </tr>
+              <tr>
+                <td>Database</td>
+                <td>Javascript</td>
+                <td>Software Testing</td>
+              </tr>
+              <tr>
+                <td>Git & Github</td>
+                <td>Single Page App</td>
+                <td>UX/UI Designer</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="gambar">
+        <div>
+          <img
+            class="mathew"
+            src="/13-HTML-CSS/assets/matthew-hamilton-tNCH0sKSZbA-unsplash.jpg"
+            alt=""
+            style="height: 18rem"
+          />
+        </div>
+        <div class="dot-image">
+          <img src="/13-HTML-CSS/assets/img-dot@2x.png" alt="" style="height: 5rem" />
+        </div>
+      </div>
+    </div>
+    <footer class="container-footer">
+        <div class="grid-left">
+          <img src="/13-HTML-CSS/assets/logo-ALTA-v2@2x.png" alt="" style="height: 3rem" />
+        </div>
+        <div class="grid-mid">
+          <div class="space-border">
+            <p class="text-socmed">Social Media</p>
+            <div class="img-socmed">
+              <img src="/13-HTML-CSS/assets/ic_fb@2x.png" alt="" style="height: 1rem" />
+              <img src="/13-HTML-CSS/assets/ic-twitter@2x.png" alt="" style="height: 1rem" />
+              <img src="/13-HTML-CSS/assets/ic-instagram@2x.png" alt="" style="height: 1rem" />
+              <img src="/13-HTML-CSS/assets/ic-linkedin@2x.png" alt="" style="height: 1rem" />
+            </div>
+          </div>
+        </div>
+        <div class="grid-right">
+          <p class="text2"></p>
+          <p class="text">Copyright © 2019 Alterra</p>
+        </div>
+      </footer>
+  </body>
 </html>

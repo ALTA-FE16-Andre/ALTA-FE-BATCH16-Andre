@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="/13-HTML-CSS/css/contact.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <style>
+      textarea.form-control {
+        color: #19345e;
+      }
+      .form-control:focus {
+        border-color: #19345e;
+        box-shadow: 0 0 0 1px #19345e;
+      }
+      .form-control {
+        border: 1px solid #aaa5a5;
+      }
+
+      .button {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #f47522;
+        color: #ffffff;
+        text-decoration: none;
+        border-radius: 20px;
+        font-weight: bold;
+        transition: background-color 0.3s ease-in-out;
+      }
+      .form-select:focus {
+        border-color: #19345e;
+        box-shadow: 0 0 0 1px #19345e;
+      }
+      .form-select {
+        height: 50px;
+        border: 1px solid #aaa5a5;
+        color: #19345e;
+      }
+
+      #formFullName,
+      #formPhoneNumber,
+      #formEmailAddress {
+        height: 50px;
+        color: #19345e;
+      }
+
+      .form-label {
+        color: #19345e;
+        padding-top: 8px;
+      }
+
+      .form-control::placeholder {
+        color: rgb(226, 226, 226);
+      }
+      * {
+        box-sizing: border-box;
+        font-family: "Roboto", sans-serif;
+      }
+
+      html {
+        width: 100vw;
+        height: 100vh;
+      }
+
+      body {
+        margin: 0;
+        overflow: auto;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+      }
+
+      a,
+      p {
+        font-size: larger;
+        color: #19345e;
+      }
+    </style>
+  </head>
+  <body>
+    <div style="height: 100%; width: 100%">
+      <div class="form-area">
+        <div class="container">
+          <div class="row single-form g-0">
+            <div class="col-sm-12 col-lg-6">
+              <div class="left">
+                <div class="bg-img"></div>
+                <img class="logo" src="/13-HTML-CSS/assets/logo-ALTA-v2@2x.png" alt="" />
+              </div>
+            </div>
+            <div class="col-sm-12 col-lg-6">
+              <div class="right">
+                <i class="fa fa-caret-left"></i>
+                <p>Contact Us</p>
+                <form>
+                  <div class="form-outline w-75">
+                    <label for="formFullName" class="form-label"
+                      >Full Name<span style="color: red">*</span></label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="formFullName"
+                      placeholder="Full Name"
+                    />
+                  </div>
+                  <div class="form-outline w-75">
+                    <label for="" class="form-label"
+                      >Email address<span style="color: red">*</span></label
+                    >
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="formEmailAddress"
+                      placeholder="example@alterra.id"
+                      aria-describedby="emailHelp"
+                    />
+                  </div>
+                  <div class="form-outline w-75">
+                    <label for="" class="form-label"
+                      >Phone Number<span style="color: red">*</span></label
+                    >
+                    <input
+                      class="form-control"
+                      id="formPhoneNumber"
+                      placeholder="08555447900"
+                    />
+                  </div>
+                  <div class="form-outline w-75">
+                    <label for="role" class="form-label">Role </label>
+                    <select
+                      class="form-select"
+                      title="Some placeholder text..."
+                      aria-label="Select Role"
+                    >
+                      <option selected disabled>Selected...</option>
+                      <option value="one">One</option>
+                      <option value="two">Two</option>
+                      <option value="three">Three</option>
+                    </select>
+                  </div>
+                  <div class="form-outline w-75">
+                    <label for="" class="form-label">Message</label>
+                    <textarea
+                      type="text"
+                      class="form-control"
+                      id="formMessage"
+                      rows="4"
+                    ></textarea>
+                  </div>
+                  <button type="submit" class="btn button btn-lg">
+                    Submit
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

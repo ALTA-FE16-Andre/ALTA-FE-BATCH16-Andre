@@ -1,0 +1,47 @@
+body {
+	background: #e8e8e8;
+}
+
+.left {
+    background-image: linear-gradient(
+        rgba(25, 52, 94, 0.5),
+        rgba(25, 52, 94, 0.5)
+      ),
+      url("/13-HTML-CSS/assets/charles-rRWiVQzLm7k-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 85%;
+    height: 100vh;
+  }
+
+.logo {
+    height: 7rem;
+    position: relative;
+    top: 17rem;
+    left: 7rem;
+}
+
+.right {
+    padding-top: 5px;
+    padding-left: 1.5rem;
+}
+
+.button {
+    background-color: #f47522;
+    padding-top: 1rem;
+}
+
+.button:hover {
+  background-color: #ffa000;
+}
+
+@media (max-width:993px) {
+    .left {
+    
+  display: none
+    }
+    .right{
+        width: 100% !important;
+    }
+}
